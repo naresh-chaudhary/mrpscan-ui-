@@ -1,0 +1,10 @@
+ 1. Naive Bayes Classifier
+2. Brown Corpora.
+3. High Charts
+4. NLTK
+5. AJAX
+6. Python
+7. Twitter Streaming API
+8. Google Heat Maps.
+7. Bootstrap
+

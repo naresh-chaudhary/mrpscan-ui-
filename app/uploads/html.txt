@@ -1,0 +1,22 @@
+.row
+  #index-banner.parallax-container
+    .section.no-pad-bot
+      .container
+        br
+        br
+        h1.header.center.myColor.text-lighten-2
+          = @profile.name
+        .row.center
+          h5.header.col.s12.light 
+            | A modern responsive front-end framework based on Material Design
+        .row.center
+          a#download-button.btn-large.waves-effect.waves-light.red.lighten-1 href=""  
+            | Get Started
+        br
+        br
+
+    .slider
+        ul.slides
+          -@profile.coversliders.each do |coverslider|
+            li
+              = image_tag coverslider.image_url.to_s 

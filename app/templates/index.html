@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sentiment analyser | Sentiment Analytics At Its Best.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/materialize.min.js"></script>
+  <script src="static/js/init.js"></script>
+  <script src="static/js/jQuerySimpleCounter.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $("#loading").hide();
+    $("#submit").click(function() {
+     $('#query').hide();
+     $('#loading').show();
+     
+    });
+  });
+  </script>
+</head>
+
+<body>
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"> Sentiment Analyser 
+        | Minor Project</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#modal1">Analyse Tweet</a></li>
+        <li><a href="textanalyse" target="_blank">Anayse Text</a></li>
+        
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#modal1">Analyse Tweet</a></li>
+        <li><a href="textanalyse" target="_blank">Analyse Text</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars red-text"></i></a>
+    </div>
+  </nav>
+  </div>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+       {% if error %}
+        <div class="row">
+          <p class="red-text">{{ error }}</p>
+          </div>
+        {% endif %}
+      <div class="row">
+        <form id="query" action="" method="post">
+          <div class="row">
+            <div class="input-field col l6 s12">
+              <i class="fa fa-search prefix"></i>
+              <input type="text" name="query" value="{{request.form.query}}"class="validate" required="required">
+              <label for="query">Enter Your Query</label>
+            </div>
+            <button class="btn waves-effect waves-light red lighten-2" id="submit" type="submit" name="action" style="margin-bottom: -50px; margin-left: 30px;">Search<i class="fa fa-search right"></i>
+            </button> 
+          </div>
+        </form>
+        <div id = "loading">
+        <center><h5>Loading Tweets</h3><img src = "/static/img/loading.gif"></div></center>
+      </div>
+     </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row white-text">
+          <h4 class="red-text lighten 1">Sentiment Analyser | About Project </h4>
+          <hr>
+          <p class="white-text">This project addresses the problem of sentiment analysis of a given text or tweet and classifying the sentiments expressed in them as positive, negative or neutral. Sentiment Analyser is of big use for companies and other industries to review their product by knowing what people are thinking about them. It may also come handy to know the mood of writer in a text.</p>
+          <p class="white-text">This project is developed by Nishant, Naresh, Gaurav and Krati Under the guiance of Dr. Jaytrilok Chaudhary,as their minor project during their third year of bachelors degree in Computer Science and Engineering.</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="static/img/sharebg.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer red lighten-2">
+    <div class="container">
+      <div class="row center white-text">
+        <ul>
+        <li><a href="https://www.facebook.com/" target="_blank" class="white-text"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-google-plus fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-envelope fa-2x"></i></a></li>
+
+        </ul>
+        </div>
+        <div class="row center">
+          <ul>
+            <li><a class="brown-text" href="#!">Terms and Conditions</a></li>
+            <li><a class="brown-text" href="#!">Careers</a></li>
+            <li><a class="brown-text" href="#!">Privacy</a></li>
+            <li><a class="brown-text" href="#!">Team</a></li>
+            <li><a class="brown-text" href="#!" target="_blank">Blog</a></li>
+            <li><a class="brown-text" href="#!">News</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <div class="row">
+        <div class="col l6">
+          <span class="brown-text">
+          &copy; 2016 | NIT-B</span>
+        </div>
+        <div class="col l6 right brown-text">
+          <p class="right">Handcrafted With <span class="white-text"><i class="fa fa-heart fa-2x"></i></span> in India.</p> 
+        </div>
+        </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+<script type="text/javascript">
+  var chk=1;
+  $(function() {
+  var oTop = $('#counter').offset().top - window.innerHeight;
+    $(window).scroll(function(){
+    var pTop = $('body').scrollTop();
+    
+    if( pTop > oTop && chk > 0){
+        $('#count').jQuerySimpleCounter({
+          start:50,
+          end:1200,
+          duration: 4000
+        });
+        chk=0;
+    }
+  });
+});
+  </script>
+
+</body>
+</html>

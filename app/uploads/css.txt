@@ -1,0 +1,24 @@
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  
+ }
+  .parallax-container .section {
+    width: 100%;
+    z-index: 4;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+  }
+   .parallax-container .section input{
+    color: black;
+  }
+ 
+
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}

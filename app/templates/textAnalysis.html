@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MRP Scanner | Scan MRP from Grocery Images</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="/static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/materialize.min.js"></script>
+  <script src="/static/js/init.js"></script>
+  <script src="/static/js/jQuerySimpleCounter.js"></script>
+  <script type="text/javascript">
+   $(document).ready(function () {
+    $("#loading").hide();
+    $("#loading1").hide();
+    $("#submit").click(function() {
+     $('#querytext').hide();
+     $('#loading').show();
+    });
+    $("#submit2").click(function() {
+     $('#fileupload').hide();
+     $('#loading1').show();
+     
+    });
+  });
+  </script>
+</head>
+
+<body>
+
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">MRP Scanner
+        | The Chosen Ones</a>
+{#      <ul class="right hide-on-med-and-down">#}
+{#        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#">Analyse Tweet</a></li>#}
+{#        <li><a href="#!" target="_blank">Anayse Text</a></li>   #}
+{#      </ul>#}
+{#      <ul id="nav-mobile" class="side-nav">#}
+{#        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#">Analyse Tweet</a></li>#}
+{#        <li><a href="#!" target="_blank">Analyse Text</a></li>#}
+{#      </ul>#}
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars red-text"></i></a>
+    </div>
+  </nav>
+  </div>
+
+<div class = "row container">
+  <div class="card z-depth-2">
+    <div class="row card-action">
+{#      <div class="col l4 offset-l2">#}
+{#        <button class="btn waves-effect waves-light teal lighten-2 modal-trigger" href="#modal1">Submit Text<i class="fa fa-file-text-o right"></i>#}
+{#        </button>#}
+{#      </div>#}
+      <div class="col l4 offset-l2">
+        <button class="btn waves-effect waves-light teal lighten-2 modal-trigger" href="#modal2">Upload File<i class="fa fa-upload right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+       {% if error %}
+        <div class="row">
+          <p class="red-text">{{ error }}</p>
+          </div>
+        {% endif %}
+      <div class="row">
+        <form id="querytext" action="" method="post">
+          <div class="row">
+            <div class="input-field col l12 s12">
+              <i class="fa fa-search prefix"></i>
+              <textarea id="texta" name="texta" value="{{request.form.texta}}" class="materialize-textarea" required="required"></textarea>
+              <label for="texta">Enter Text To Analyse</label>
+            </div>
+            <button class="btn waves-effect waves-light red lighten-2" id="submit" type="submit" name="submit" value="text">Submit Text
+            </button> 
+          </div>
+        </form>
+        <div id = "loading">
+        <center><h3>Analysing Text</h3><img src = "/static/img/loading.gif"></center>
+      </div>
+     </div>
+  </div>
+</div>
+
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+       {% if error %}
+        <div class="row">
+          <p class="red-text">{{ error }}</p>
+          </div>
+        {% endif %}
+      <div class="row">
+        <form id="fileupload" action="" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <div class="file-field input-field">
+              <div class="btn">
+              <span>Browse File<i class="fa fa-upload right"></i></span>
+              <input type="file" name="file">
+            </div>
+            <div class="file-path-wrapper">
+            <input class="file-path validate" required="required" type="text">
+            </div>
+            </div>
+            <button class="btn waves-effect waves-light red lighten-2" id="submit2" type="submit" name="submit" value="file" style="margin-bottom: -50px;">Submit File
+            </button> 
+         </div>
+        </form>
+        <div id = "loading1">
+        <center><h3>Analysing Text</h3><img src = "/static/img/loading.gif"></center>
+      </div>
+     </div>
+  </div>
+</div>
+
+
+  {% if result %}
+    <br>
+      <div class = "row container">
+        <div class="card z-depth-2">
+          <div class="card-content">
+            <div class="row">
+              <div class="col l8">
+                <h4> Results: </h4>
+{#                <p> {{ text|safe}}</p>#}
+              </div>
+              <div class="col l3 offset-l1">
+                <h4> Our Analysis </h4>
+                  <p> MRP :  <span class="green-text"> {{ result }}  </span></p>
+                  <img src = "/static/img/pos.png " width="150">
+{#                  <p>Positivity : {{ result[1] }}</p>#}
+
+              </div>
+            </div>
+          </div>
+          <br>
+{#          <div class="card-action">#}
+{#          {% for item in keywords %}#}
+{#          <div class="col l3">#}
+{#            <center><h4>{{ item }}</h4></center>#}
+{#            <ul style="list-style: none">#}
+{#              {% for word in keywords[item]  %}#}
+{#                {%if word|length%2 == 0 %}#}
+{#                  <li style="display: inline"><span class="grey-text">{{ word }} </span></li>#}
+{#                {% elif word|length%3 == 0 %}#}
+{#                  <li style="display: inline"><span class="green-text">{{ word }} </span></li>#}
+{#                {% elif word|length%5 == 0 %}#}
+{#                  <li style="display: inline; font-size: 18px;"><span class="blue-text">{{ word }} </span></li>#}
+{#                {% elif word|length%7 == 0 %}#}
+{#                  <li style="display: inline"><span class="yellow-text">{{ word }} </span></li>#}
+{#                {% else %}#}
+{#                  <li style="display: inline"><span class="black-text">{{ word }} </span></li>#}
+{#                {% endif %}#}
+{#              {% endfor %}#}
+{#            </ul>#}
+{#          </div>#}
+{#          {% endfor %}#}
+{#        </div>#}
+        </div>
+      </div>
+  {% endif %}
+
+  <footer class="page-footer red lighten-2">
+    <div class="container">
+      <div class="row center white-text">
+        <ul>
+        <li><a href="https://www.facebook.com/" target="_blank" class="white-text"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-google-plus fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-envelope fa-2x"></i></a></li>
+
+        </ul>
+        </div>
+        <div class="row center">
+          <ul>
+            <li><a class="brown-text" href="#!">Terms and Conditions</a></li>
+            <li><a class="brown-text" href="#!">Careers</a></li>
+            <li><a class="brown-text" href="#!">Privacy</a></li>
+            <li><a class="brown-text" href="#!">Team</a></li>
+            <li><a class="brown-text" href="#!" target="_blank">Blog</a></li>
+            <li><a class="brown-text" href="#!">News</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <div class="row">
+        <div class="col l6">
+          <span class="brown-text">
+          &copy; 2018 | Flipkart-Hackathon</span>
+        </div>
+        <div class="col l6 right brown-text">
+          <p class="right">Handcrafted With <span class="white-text"><i class="fa fa-heart fa-2x"></i></span> in India.</p> 
+        </div>
+        </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+
+</body>
+</html>
