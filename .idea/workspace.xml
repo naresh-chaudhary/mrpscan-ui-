@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209c4766-d81d-439c-8bb2-420f968e697d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/tweetsAnalyse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Recovery.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-11-06_at_1.32.59_PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-11-09_at_12.36.07_PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-11-11_at_3.38.30_AM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-11-14_at_10.06.34_PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-11-14_at_6.29.29_PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-12-19_at_6.39.33_PM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/Screen_Shot_2018-12-21_at_5.45.36_AM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/css.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/html.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploads/todo_9se6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/uploads/wordcount.txt" afterPath="$PROJECT_DIR$/app/static/uploads/wordcount.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.py" afterPath="$PROJECT_DIR$/app/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploads/wordcount.txt" afterPath="$PROJECT_DIR$/app/uploads/wordcount.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/css/style.css" afterPath="$PROJECT_DIR$/app/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/textAnalysis.html" afterPath="$PROJECT_DIR$/app/templates/textAnalysis.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/mrpscan-ui$mrpscan_ui.coverage" NAME="mrpscan-ui Coverage Results" MODIFIED="1545364557109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/mrpscan-ui$run.coverage" NAME="run Coverage Results" MODIFIED="1545366779829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mrpscan-ui$run.coverage" NAME="run Coverage Results" MODIFIED="1545375190756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -42,22 +28,22 @@
       <file leaf-file-name="textAnalysis.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/textAnalysis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+            <state relative-caret-position="174">
+              <caret line="118" column="12" lean-forward="true" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
               <folding>
-                <marker date="1545351520990" expanded="false" signature="5585:5601" ph="..." />
-                <marker date="1545351520990" expanded="false" signature="5736:5751" ph="..." />
-                <marker date="1545351520990" expanded="false" signature="5884:5899" ph="..." />
-                <marker date="1545351520990" expanded="false" signature="6033:6066" ph="..." />
-                <marker date="1545351520990" expanded="false" signature="6199:6214" ph="..." />
-                <marker date="1545351520990" expanded="false" signature="6330:6345" ph="..." />
+                <marker date="1545375188878" expanded="false" signature="5647:5663" ph="..." />
+                <marker date="1545375188878" expanded="false" signature="5798:5813" ph="..." />
+                <marker date="1545375188878" expanded="false" signature="5946:5961" ph="..." />
+                <marker date="1545375188878" expanded="false" signature="6095:6128" ph="..." />
+                <marker date="1545375188878" expanded="false" signature="6261:6276" ph="..." />
+                <marker date="1545375188878" expanded="false" signature="6392:6407" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="wordcount.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/uploads/wordcount.txt">
+        <entry file="file://$PROJECT_DIR$/app/static/uploads/wordcount.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -79,8 +65,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+            <state relative-caret-position="295">
+              <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -88,51 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="__builtin__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2016.3/python_stubs/-2125986627/__builtin__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="1846" column="8" lean-forward="false" selection-start-line="1846" selection-start-column="8" selection-end-line="1846" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Python/2.7/site-packages/requests/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
-              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="os.py" pinned="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/os.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1535">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="388">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -150,6 +106,17 @@
       <find>NIT</find>
       <find>files</find>
       <find>form</find>
+      <find>text</find>
+      <find>page-foo</find>
+      <find>page-footer</find>
+      <find>margin</find>
+      <find>5px</find>
+      <find>load</find>
+      <find>loading1</find>
+      <find>results</find>
+      <find>src</find>
+      <find>lines</find>
+      <find>Analysin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,6 +146,7 @@
         <option value="$PROJECT_DIR$/app/uploads/wordcount.txt" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/app/static/css/style.css" />
         <option value="$PROJECT_DIR$/app/main.py" />
         <option value="$PROJECT_DIR$/app/templates/textAnalysis.html" />
       </list>
@@ -249,6 +217,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -267,7 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,7 +258,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static" />
+      <recent name="$PROJECT_DIR$/app/static/img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.textAnalysis.html">
     <configuration default="false" name="run" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,6 +284,9 @@
       <method />
     </configuration>
     <configuration default="false" name="tweetsAnalyse.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mrpscan-ui/app/templates/tweetsAnalyse.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="textAnalysis.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mrpscan-ui/app/templates/textAnalysis.html">
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -888,15 +869,17 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.mrpscan-ui" />
       <item index="1" class="java.lang.String" itemvalue="Python.run" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.tweetsAnalyse.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.textAnalysis.html" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.run" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tweetsAnalyse.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.textAnalysis.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.tweetsAnalyse.html" />
       </list>
     </recent_temporary>
   </component>
@@ -910,12 +893,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545347547157</updated>
-      <workItem from="1545347549007" duration="6714000" />
+      <workItem from="1545347549007" duration="11673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6714000" />
+    <option name="totallyTimeSpent" value="11673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -958,7 +941,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -1098,7 +1083,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploads/WhatsApp_Image_2018-12-19_at_12.37.14_AM.jpeg">
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/WhatsApp_Image_2018-12-19_at_12.37.14_AM.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1111,12 +1096,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploads/wordcount.txt">
+    <entry file="file://$PROJECT_DIR$/app/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/wordcount.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/WhatsApp_Image_2018-12-18_at_9.29.44_AM_1.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/WhatsApp_Image_2018-12-19_at_12.33.38_AM.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/WhatsApp_Image_2018-12-19_at_12.33.18_AM.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/WhatsApp_Image_2018-12-19_at_12.32.59_AM.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/uploads/WhatsApp_Image_2018-12-19_at_12.12.12_AM.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
@@ -1127,10 +1145,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2016.3/python_stubs/-2125986627/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1846" column="8" lean-forward="false" selection-start-line="1846" selection-start-column="8" selection-end-line="1846" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="295">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -1139,15 +1165,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/textAnalysis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="174">
+          <caret line="118" column="12" lean-forward="true" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
           <folding>
-            <marker date="1545351520990" expanded="false" signature="5585:5601" ph="..." />
-            <marker date="1545351520990" expanded="false" signature="5736:5751" ph="..." />
-            <marker date="1545351520990" expanded="false" signature="5884:5899" ph="..." />
-            <marker date="1545351520990" expanded="false" signature="6033:6066" ph="..." />
-            <marker date="1545351520990" expanded="false" signature="6199:6214" ph="..." />
-            <marker date="1545351520990" expanded="false" signature="6330:6345" ph="..." />
+            <marker date="1545375188878" expanded="false" signature="5647:5663" ph="..." />
+            <marker date="1545375188878" expanded="false" signature="5798:5813" ph="..." />
+            <marker date="1545375188878" expanded="false" signature="5946:5961" ph="..." />
+            <marker date="1545375188878" expanded="false" signature="6095:6128" ph="..." />
+            <marker date="1545375188878" expanded="false" signature="6261:6276" ph="..." />
+            <marker date="1545375188878" expanded="false" signature="6392:6407" ph="..." />
           </folding>
         </state>
       </provider>
